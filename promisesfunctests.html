@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const myFunction = (json) => {
+            console.log('Now I can continue with my program.')
+            console.log(json)
+        }
+        // //test 1
+        //fetch("data.json")
+        //.then(resp=>console.log(resp))
+
+        // //test 2
+       // fetch("data.json")
+       // .then(resp=>resp.json())
+       // .then(data=>console.log(data))
+
+        // //test 3
+       // fetch("data.txt")  //fetching the data
+       // .then(resp=>resp.json()) //initializing file
+       // .then(data=>console.log(data)) //console.loging the data element. could crash the program since it doesnt have a catch
+
+        // //test 4
+       // fetch("data.txt")   //fetching the txt data
+       // .then(resp=>resp.json()) //initializing the file
+       // .then(data=>console.log(data)) //console.loging the data
+       // .catch(error=>console.log(error)) //catching the error and handling it
+
+        // //test 5
+        //fetch("foo.txt") //fetching the data in foo.txt
+        //.then(resp=>resp.json()) //iitializing the file
+        //.then(data=>console.log(data)) //console.loging the data
+        //.catch(error=>console.log(error)) //catching the error and handling it.  Doesnt handle 404 error since file doesnt exist
+
+        // //test 6
+        // fetch("data.json")
+        // .then(resp=>resp.json())
+        // .then(data=>console.log(data))
+        // .then(moreData=>console.log(moreData))
+        // .catch(error=>console.log(error)) // catching a console.consolelog returns undefined
+
+        // //test 7
+        // fetch("data.json")
+        // .then(resp=>resp.json())
+        // .then(data=>[...data, {name:'Ally', age:8}, {name:"Mark", age:6} ]) // it adds two items to the file
+        // .then(moreData=>console.log(moreData)) //an implicit return on the function
+        // .catch(error=>console.log(error)) // no error to be caught
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+///when you are creating a promise function, the function has 2 functions inside.  a resolve and reject function
+        let myPromise = new Promise((resolve, reject)=>{
+            resolve("We Are Good to Go")
+        })
+        console.log(myPromise);
+
+        //fetch returns a promise.  If you console.log fetch it returns a promise
+        const fetch = (url) => {
+            return new Promise((resolve, reject))={
+                resolve(ResponseObject)
+            }
+        //".then" is the result of the "resolve"
+        //myPromise.then(res=>console.log(res))
+        
+        let number = 0
+        let myPromise = new Promise((resolve, reject) =>{
+            if(number>0){
+                resolve("This is a good number!")
+            } else {
+                reject("This is a bad number")
+            }
+        })
+        //From a single promise you can chain together more and more promises with the ".then" statment
+        myPromise
+        .then(resolve=>console.log(resolved))
+        .catch(rejected=>console.log(rejected))  //recommended to return something from a catch
+        .then(()=>console.log(`and the number is ${number}`))
+       
+    </script>
+</body>
+</html>
