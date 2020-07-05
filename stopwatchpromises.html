@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <script>
+        onclick = 0
+        const stopWatch = () => {
+            return new Promise ((resolve, reject) => {
+                onclick +=1;
+                let num = Math.floor(Math.randon()*10)
+                let myClick = onclick;
+                setTimeout(() => {
+                    resolve ([`sum${num} secs`, myClick])
+                    }, num*1000)
+            })
+        }
+
+        document.getElementById("start")
+        .addEventListener("click", async () =>{
+            const result = await stopWatch()
+ })
+
+
+
+    </script>
+</body>
+</html>
